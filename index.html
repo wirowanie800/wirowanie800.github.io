@@ -2,7 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>~*~ My AWESOME Resume ~*~</title>
+    <script>
+    (function titleScroller(text) {
+        document.title = text;
+        console.log(text);
+        setTimeout(function () {
+            titleScroller(text.substr(1) + text.substr(0, 1));
+        }, 500);
+    }(" ~*~ Welcome to my homepage! ~*~ "));
+    </script>
     <link rel="icon" type="image/x-icon" href="resources/alien.gif">
     <style>
         body {
