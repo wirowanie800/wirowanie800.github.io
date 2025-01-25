@@ -111,7 +111,25 @@
         <script src="https://unpkg.com/webamp"></script>
         <script>
             const app = document.getElementById("app")
-            const webamp = new Webamp();
+            const webamp = new Webamp({
+                initialTracks: [
+                    {
+                        url: "CANYON.mp3",
+                        title: "CANYON",
+                        artist: "Microsoft"
+                    },
+                    {
+                        url: "PASSPORT.mp3",
+                        title: "PASSPORT",
+                        artist: "Microsoft"
+                    },
+                    {
+                        url: "ALMONDS.mp3",
+                        title: "ALMONDS",
+                        artist: "Microsoft"
+                    }
+                ]
+            });
             webamp.renderWhenReady(app);
         </script>
         
