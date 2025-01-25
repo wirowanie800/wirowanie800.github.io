@@ -55,6 +55,7 @@
             border: 3px dotted #FF69B4;
         }
     </style>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 </head>
 <body>
     <marquee>☆ WELCOME TO MY HOMEPAGE! ☆</marquee>
@@ -131,6 +132,9 @@
                 ]
             });
             webamp.renderWhenReady(app);
+            window.addEventListener("load", (event) => {
+                new cursoreffects.bubbleCursor();
+            });
         </script>
         
         <p>Visit Counter:</p>
